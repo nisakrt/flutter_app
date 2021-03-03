@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16bc92db-9a06-49d1-a62b-ecf74b57526f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/flutter_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flutter_app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
@@ -17,7 +18,6 @@
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/private.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/private.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/mqtt_stream.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mqtt_stream.dart" afterDir="false" />
     </list>
@@ -40,6 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -89,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614787723381</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Subscribe has been added">
+      <created>1614796328016</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614796328016</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -97,7 +105,8 @@
     <MESSAGE value="test message" />
     <MESSAGE value="Gereksiz controller yapıları silindi" />
     <MESSAGE value="clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean" />
+    <MESSAGE value="Subscribe has been added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subscribe has been added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="865" y="420" width="251" height="273" key="#Notifications" timestamp="1614787603557">
@@ -108,30 +117,30 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1614786588435" />
-    <state x="535" y="101" width="912" height="911" key="CommitChangelistDialog2" timestamp="1614787723334">
+    <state x="535" y="101" width="912" height="911" key="CommitChangelistDialog2" timestamp="1614796327758">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="535" y="101" width="912" height="911" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1614787723334" />
+    <state x="535" y="101" width="912" height="911" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1614796327758" />
     <state x="779" y="314" width="424" height="491" key="FileChooserDialogImpl" timestamp="1614786878132">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="779" y="314" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1614786878132" />
-    <state width="1802" height="231" key="GridCell.Tab.0.bottom" timestamp="1614789239589">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1614803662878">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="231" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1614789239589" />
-    <state width="1802" height="231" key="GridCell.Tab.0.center" timestamp="1614789239587">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1614803662878" />
+    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1614803662871">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="231" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1614789239587" />
-    <state width="1802" height="231" key="GridCell.Tab.0.left" timestamp="1614789239587">
+    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1614803662871" />
+    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1614803662871">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="231" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1614789239587" />
-    <state width="1802" height="231" key="GridCell.Tab.0.right" timestamp="1614789239588">
+    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1614803662871" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1614803662871">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="231" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1614789239588" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1614803662871" />
     <state x="627" y="314" width="728" height="485" key="MultipleFileMergeDialog" timestamp="1614787740432">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -140,10 +149,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1614790409930" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1614787731967">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1614796337342">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1614787731967" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1614796337342" />
     <state x="675" y="342" width="642" height="430" key="git4idea.merge.GitPullDialog" timestamp="1614787691950">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

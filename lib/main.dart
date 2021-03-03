@@ -120,6 +120,7 @@ class _LoginDemoState extends State<LoginDemo> {
                   payload["password"] = password_Controller.text;
 
                   myMqtt.publish("server/login" ,jsonEncode(payload));
+                  _StatusControl();
                 },
                 splashColor: Colors.indigo,
 
@@ -130,7 +131,7 @@ class _LoginDemoState extends State<LoginDemo> {
                 ),
               ),
             ),
-            _viewData(),
+            //_viewData(),
             SizedBox(
               height: 130,
             ),
@@ -142,7 +143,7 @@ class _LoginDemoState extends State<LoginDemo> {
     );
   }
   _viewData(){
-    return StreamBuilder(
+    StreamBuilder(
       stream: MqttFeed.subscribeStream,
       builder: (context, snapshot){
         String reading = snapshot.data;
@@ -168,6 +169,21 @@ class _LoginDemoState extends State<LoginDemo> {
       },
     );
   }
+
+  _StatusControl() async  {
+    MqttFeed.subscribeStream.listen((data) {
+      print("Future: "+data);
+      Map<String, dynamic> map = json.decode(data);
+      if (map["status"]==true)
+      {
+        Navigator.push(context,
+          MaterialPageRoute(builder: (context) => SecondPage()),
+        );
+      }
+    });
+
+  }
+
   HomePage() {}
 }
 class SecondPage extends StatelessWidget {

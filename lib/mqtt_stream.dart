@@ -115,6 +115,7 @@ class AppMqttTransactions {
     client.updates.listen((List<MqttReceivedMessage<MqttMessage>> c) {
       final MqttPublishMessage recMess = c[0].payload;
       final String pt = MqttPublishPayload.bytesToStringAsString(recMess.payload.message);
+      print('Received message:$pt from topic: ${c[0].topic}>');
       MqttFeed.add(pt);
       return pt;
     });
