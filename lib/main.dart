@@ -34,6 +34,7 @@ class _LoginDemoState extends State<LoginDemo> {
   {
     super.initState();
     myMqtt.subscribe("frontend/response");
+    _StatusControl();
   }
 
   final username_Controller = TextEditingController();
@@ -120,7 +121,7 @@ class _LoginDemoState extends State<LoginDemo> {
                   payload["password"] = password_Controller.text;
 
                   myMqtt.publish("server/login" ,jsonEncode(payload));
-                  _StatusControl();
+
                 },
                 splashColor: Colors.indigo,
 
