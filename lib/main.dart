@@ -29,6 +29,12 @@ class _LoginDemoState extends State<LoginDemo> {
   @override
   AppMqttTransactions myMqtt = AppMqttTransactions();
 
+  @override
+  void initState()
+  {
+    super.initState();
+    myMqtt.subscribe("frontend/response");
+  }
 
   final username_Controller = TextEditingController();
   final password_Controller = TextEditingController();
@@ -112,8 +118,8 @@ class _LoginDemoState extends State<LoginDemo> {
                   var payload = {};
                   payload["username"] = username_Controller.text;
                   payload["password"] = password_Controller.text;
-                  myMqtt.publish("server/login" ,jsonEncode(payload));
 
+                  myMqtt.publish("server/login" ,jsonEncode(payload));
                 },
                 splashColor: Colors.indigo,
 
@@ -124,16 +130,44 @@ class _LoginDemoState extends State<LoginDemo> {
                 ),
               ),
             ),
+            _viewData(),
             SizedBox(
               height: 130,
             ),
+
             Text('New User? Create Account')
           ],
         ),
       ),
     );
   }
-
+  _viewData(){
+    return StreamBuilder(
+      stream: MqttFeed.subscribeStream,
+      builder: (context, snapshot){
+        String reading = snapshot.data;
+        if(reading == null){
+          reading = "Cevap";
+          return Text(reading);
+        }
+        else{
+          Map<String, dynamic> map = jsonDecode(reading);
+          if (map["status"]==true)
+          {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SecondPage()),
+            );
+            return Text("Username or password is true");
+          }
+          else
+          {
+            return Text("Username or password is not true");
+          }
+        }
+      },
+    );
+  }
   HomePage() {}
 }
 class SecondPage extends StatelessWidget {

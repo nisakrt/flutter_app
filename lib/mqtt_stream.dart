@@ -78,10 +78,8 @@ class AppMqttTransactions {
     client.logging(on: true);
     final MqttConnectMessage connMess = MqttConnectMessage()
         .authenticateAs(connectJson['username'], connectJson['password'])
-        .withClientIdentifier('myClientID')
+        .withClientIdentifier('myClientID2')
         .keepAliveFor(60) // Must agree with the keep alive set above or not set
-        .withWillTopic('willtopic') // If you set this you must set a will message
-        .withWillMessage('My Will message')
         .startClean() // Non persistent session for testing
         .withWillQos(MqttQos.atMostOnce);
     client.connectionMessage = connMess;
