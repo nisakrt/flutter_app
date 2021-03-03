@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'mqtt_stream.dart';
 import 'Mqtt_feed.dart';
@@ -27,23 +29,22 @@ class _LoginDemoState extends State<LoginDemo> {
   @override
   AppMqttTransactions myMqtt = AppMqttTransactions();
 
-  final myController = TextEditingController();
-  final myController1 = TextEditingController();
 
+  final username_Controller = TextEditingController();
+  final password_Controller = TextEditingController();
   @override
   void dispose() {
     // Clean up the controller when the widget is disposed.
-    myController.dispose();
+    username_Controller.dispose();
     super.dispose();
   }
 
+  @override
   void dispose1() {
     // Clean up the controller when the widget is disposed.
-    myController1.dispose();
+    password_Controller.dispose();
     super.dispose();
   }
-
-
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
@@ -71,7 +72,7 @@ class _LoginDemoState extends State<LoginDemo> {
               padding: EdgeInsets.symmetric(horizontal: 15),
 
               child: TextField(
-                controller: myController,
+                controller: username_Controller,
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Email',
@@ -84,6 +85,7 @@ class _LoginDemoState extends State<LoginDemo> {
               //padding: EdgeInsets.symmetric(horizontal: 15),
               child: TextField(
 
+                controller: password_Controller,
                 obscureText: true,
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
@@ -107,8 +109,11 @@ class _LoginDemoState extends State<LoginDemo> {
                   color: Colors.indigo[900], borderRadius: BorderRadius.circular(20)),
               child: FlatButton(
                 onPressed: () {
-                  String value = '{"username":"'+myController.text+'","password":'+myController1.text+'}';
-                  myMqtt.publish("login", value);
+                  var payload = {};
+                  payload["username"] = username_Controller.text;
+                  payload["password"] = password_Controller.text;
+                  myMqtt.publish("server/login" ,jsonEncode(payload));
+
                 },
                 splashColor: Colors.indigo,
 
