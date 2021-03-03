@@ -26,14 +26,10 @@ class LoginDemo extends StatefulWidget {
 class _LoginDemoState extends State<LoginDemo> {
   @override
   AppMqttTransactions myMqtt = AppMqttTransactions();
-  final TopicController = TextEditingController();
-  final valueController = TextEditingController();
-
-  final TopicController1 = TextEditingController();
-  final valueController1 = TextEditingController();
 
   final myController = TextEditingController();
   final myController1 = TextEditingController();
+
   @override
   void dispose() {
     // Clean up the controller when the widget is disposed.
