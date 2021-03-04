@@ -23,8 +23,8 @@ class _SecondPageState extends State<SecondPageDemo> {
   @override
   void initState() {
     super.initState();
+    _StatusControl2();
     myMqtt.subscribe("frontend/stations_response");
-    print("Nisoşşş");
   }
 
   _StatusControl2() async  {
@@ -32,12 +32,7 @@ class _SecondPageState extends State<SecondPageDemo> {
     subscriptionStream = MqttFeed.subscribeStream.listen((data) {
       print("Gelen istasyon verisi: "+data);
       Map<String, dynamic> map = json.decode(data);
-      print("Stations:");
-      //if (map["status"]==true)
-      //{
-      //Navigator.push(context,
-      //MaterialPageRoute(builder: (context) => SecondPage()),
-      //);
+      print("Stations:" + map["stations"].toString());
       //}
     });
   }
@@ -72,7 +67,6 @@ class _SecondPageState extends State<SecondPageDemo> {
               onPressed: () {
                 var payload = {};
                 payload["request"] = "request";
-                _StatusControl2();
                 myMqtt.publish("server/stations_request", jsonEncode(payload));
               },
               color: Colors.indigo[900],

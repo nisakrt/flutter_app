@@ -33,7 +33,7 @@ class _LoginDemoState extends State<LoginDemo> {
   {
     super.initState();
     myMqtt.subscribe("frontend/response");
-    _StatusControl();
+    _SubscribeControl();
   }
 
   final username_Controller = TextEditingController();
@@ -139,7 +139,7 @@ class _LoginDemoState extends State<LoginDemo> {
     );
   }
 
-  _StatusControl() async  {
+  _SubscribeControl() async  {
     var subscriptionStream;
     subscriptionStream = MqttFeed.subscribeStream.listen((data) {
       print("Gelen veri: "+data);
