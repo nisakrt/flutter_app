@@ -2,6 +2,7 @@ import 'package:mqtt_client/mqtt_client.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'Mqtt_feed.dart';
+import 'dart:math';
 
 class AppMqttTransactions {
 
@@ -68,17 +69,22 @@ class AppMqttTransactions {
     String connect = await rootBundle.loadString('config/private.json');
     return (json.decode(connect));
   }
+  String getRandomString(int len) {
+    var random = Random.secure();
+    var values = List<int>.generate(len, (i) =>  random.nextInt(255));
+    return base64UrlEncode(values);
+  }
 
   Future<MqttClient> _login() async {
 
     Map connectJson = await _getBrokerAndKey();
-
+    String clientId = getRandomString(10);
     client = MqttClient(connectJson['broker'], connectJson['key']);
     // Turn on mqtt package's logging while in test.
     client.logging(on: true);
     final MqttConnectMessage connMess = MqttConnectMessage()
         .authenticateAs(connectJson['username'], connectJson['password'])
-        .withClientIdentifier('myClientID2')
+        .withClientIdentifier(clientId)
         .keepAliveFor(60) // Must agree with the keep alive set above or not set
         .startClean() // Non persistent session for testing
         .withWillQos(MqttQos.atMostOnce);
@@ -101,6 +107,7 @@ class AppMqttTransactions {
     }
     return client;
   }
+
 
   Future _subscribe(String topic) async {
     // for now hardcoding the topic
