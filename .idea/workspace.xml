@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16bc92db-9a06-49d1-a62b-ecf74b57526f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/admin.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Mqtt_feed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Mqtt_feed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mqtt_stream.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mqtt_stream.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +28,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[192.168.57.101:5555]" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -104,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614805353348</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Random Identifier has been added">
+      <created>1614857127353</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614857127353</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -115,7 +137,8 @@
     <MESSAGE value="Subscribe has been added" />
     <MESSAGE value="Subscribe listen has been added" />
     <MESSAGE value="Status Control has been moved to initstate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Status Control has been moved to initstate" />
+    <MESSAGE value="Random Identifier has been added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Random Identifier has been added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="865" y="420" width="251" height="273" key="#Notifications" timestamp="1614787603557">
@@ -126,30 +149,30 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1614786588435" />
-    <state x="620" y="59" width="912" height="911" key="CommitChangelistDialog2" timestamp="1614805353254">
+    <state x="620" y="59" width="912" height="911" key="CommitChangelistDialog2" timestamp="1614857127245">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="620" y="59" width="912" height="911" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1614805353254" />
+    <state x="620" y="59" width="912" height="911" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1614857127245" />
     <state x="779" y="314" width="424" height="491" key="FileChooserDialogImpl" timestamp="1614786878132">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="779" y="314" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1614786878132" />
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1614856888458">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1614885995452">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1614856888458" />
-    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1614856888458">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1614885995452" />
+    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1614885995451">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1614856888458" />
-    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1614856888458">
+    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1614885995451" />
+    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1614885995450">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1614856888458" />
-    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1614856888458">
+    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1614885995450" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1614885995451">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1614856888458" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1614885995451" />
     <state x="627" y="314" width="728" height="485" key="MultipleFileMergeDialog" timestamp="1614787740432">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -158,13 +181,17 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1614790409930" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1614805749054">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1614857132990">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1614805749054" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1614857132990" />
     <state x="675" y="342" width="642" height="430" key="git4idea.merge.GitPullDialog" timestamp="1614787691950">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="675" y="342" width="642" height="430" key="git4idea.merge.GitPullDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1614787691950" />
+    <state x="660" y="252" key="run.anything.popup" timestamp="1614857400134">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="660" y="252" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1614857400134" />
   </component>
 </project>

@@ -3,7 +3,7 @@ import 'dart:async';
 
 class MqttFeed {
 
-  static var _feedController = StreamController<String>();
+  static var _feedController = StreamController<String>.broadcast();
   // Expose the stream so a StreamBuilder and use it.
   static Stream<String> get subscribeStream => _feedController.stream;
 //
